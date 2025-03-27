@@ -161,7 +161,7 @@ footer {
 .profile-img {
     width: 300px; /* Adjust the size as needed */
     height: 300px; /* Keep it equal for a perfect circle */
-    border-radius: 70%; /* Makes the image round */
+    border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image fills the circle properly */
     box-shadow: 0 4px 10px rgba(42, 15, 44, 0.2); /* Adds a subtle shadow */
     transition: transform 0.3s ease-in-out; /* Smooth hover effect */
