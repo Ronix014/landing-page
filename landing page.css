@@ -61,18 +61,27 @@ nav a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom, #965bc0, #776981);
-    height: 50vh;
+    background: linear-gradient(to bottom, #be96db, #73677c);
+    height: 300px; /* Gawin mong mas maliit kung gusto mo */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-end; /* Inilipat sa baba */
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 30px;
-    animation: fadeIn 2s ease-in-out;
+    margin: 30px 0;
+    padding-bottom: 50px; /* Adjust kung gusto mong mas mataas/baba pa */
 }
+
+
+
+
+.hero h1 {
+    margin: 5; /* Removes extra margin */
+    line-height: 1; /* Adjusts line height for better vertical centering */
+}
+
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -99,7 +108,7 @@ nav a {
 /* About Me Section */
 .about-me {
     width: 300px;
-    background: #6a0dad;
+    background: #9c89aa;
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -109,7 +118,7 @@ nav a {
 .about-me h2 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #FFD700; /* Gold accent */
+    color: #ccb42f; /* Gold accent */
 }
 
 .about-me p {
@@ -145,5 +154,20 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 130px;
+}
+
+/* Profile Image - Rounded & Smaller */
+.profile-img {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Keep it equal for a perfect circle */
+    border-radius: 70%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    box-shadow: 0 4px 10px rgba(42, 15, 44, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Optional Hover Effect */
+.profile-img:hover {
+    transform: scale(1.1);
 }
